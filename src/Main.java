@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        // задача 1
+        // Задача 1
         for (int i = 1; i <= 10; i++) {
             System.out.println(i);
         }
@@ -36,11 +36,10 @@ public class Main {
         }
         // Задача 9
         for (int month = 1; month <= 12; month++) {
-            int contribution = 29000;
-            double allMoney = contribution * month;
-            double percent = allMoney * 0.10 + allMoney;
-
-            System.out.println("Месяц " + month + " сумма накоплений равна " + percent + " рублей");
+            double contribution = 29000;
+            double percent = contribution * 0.01 + contribution;
+            double allMoney = percent * month;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + allMoney + " рублей");
         }
         // Задача 10
         for (int i = 1; i <= 10; i++) {
