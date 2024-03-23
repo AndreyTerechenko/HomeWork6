@@ -17,8 +17,8 @@ public class Main {
             System.out.println(i);
         }
         // Задача 5
-        for (int i = 1904; i <= 2096; i += 4) {
-            System.out.println(i + " год является високосным");
+        for (int year = 1904; year <= 2096; year += 4) {
+            System.out.println(year + " год является високосным");
         }
         // Задача 6
         for (int i = 7; i <= 98; i += 7) {
@@ -29,22 +29,23 @@ public class Main {
             System.out.println(i);
         }
         // Задача 8
+        double contribution = 0;
         for (int month = 1; month <= 12; month++) {
-            int contribution = 29000;
-            int allMoney = contribution * month;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + allMoney + " рублей");
+            contribution = contribution + 29000;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + (long) contribution + " рублей");
         }
         // Задача 9
+        contribution = 0;
         for (int month = 1; month <= 12; month++) {
-            double contribution = 29000;
-            double percent = contribution * 0.01 + contribution;
-            double allMoney = percent * month;
-            System.out.println("Месяц " + month + " сумма накоплений равна " + allMoney + " рублей");
+            contribution = contribution * 1.01;
+            contribution = contribution + 29000;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + (long) contribution + " рублей");
         }
         // Задача 10
+        int t = 2;
+        int res = 0;
         for (int i = 1; i <= 10; i++) {
-            int t = 2;
-            int res = t * i;
+            res = t * i;
             System.out.println(t + "*" + i + "=" + res);
         }
     }
