@@ -48,6 +48,6 @@ public class Main {
             res = t * i;
             System.out.println(t + "*" + i + "=" + res);
         }
-    }
+    }        //Вроде все замечания исправил.
 }
 
